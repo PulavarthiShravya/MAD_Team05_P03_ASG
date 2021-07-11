@@ -12,3 +12,5 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 }
+//To Do:
+//create timer of time 2 seconds, after 2 seconds user to view searchPage class
