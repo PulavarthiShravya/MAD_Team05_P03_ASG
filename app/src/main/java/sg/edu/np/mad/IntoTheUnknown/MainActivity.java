@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         countDownTimer();
     }
 
+    //create timer of time 2 seconds, after 2 seconds user to view searchPage class
     private void countDownTimer(){
         CountDownTimer cdt = new CountDownTimer(2000, 1000) {
             @Override
