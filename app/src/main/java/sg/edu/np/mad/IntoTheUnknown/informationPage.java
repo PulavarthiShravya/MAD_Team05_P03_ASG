@@ -10,6 +10,8 @@ public class informationPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_information_page);
+
+        getSupportActionBar().hide();
     }
 }
 //To Do:
