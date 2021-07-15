@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.IntoTheUnknown">
+
         <activity android:name=".ParkListActivity"></activity>
         <activity android:name=".informationPage2" />
         <activity android:name=".informationPage" />

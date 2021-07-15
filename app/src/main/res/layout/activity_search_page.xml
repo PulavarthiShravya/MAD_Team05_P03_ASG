@@ -7,24 +7,22 @@
     tools:context=".searchPage">
 
     <EditText
-        android:id="@+id/searchPark"
+        android:id="@+id/searchParkName"
         android:layout_width="282dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="34dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
-        android:fontFamily="@font/roboto"
+        android:fontFamily="@font/poppins_regular"
         android:inputType="textPersonName"
         android:text="Enter Park Name"
         android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.03" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/searchPark"
         android:layout_width="41dp"
         android:layout_height="47dp"
         android:layout_marginStart="20dp"
@@ -37,218 +35,156 @@
         app:srcCompat="@android:drawable/ic_menu_search" />
 
     <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="136dp"
-        android:layout_height="164dp"
-        android:layout_marginEnd="90dp"
-        android:layout_marginBottom="28dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.178"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.189"
-        app:srcCompat="@drawable/east" />
-
-    <TextView
-        android:id="@+id/east"
-        android:layout_width="137dp"
-        android:layout_height="46dp"
-        android:layout_marginEnd="90dp"
-        android:layout_marginBottom="28dp"
-        android:background="#D3D3D3"
-        android:fontFamily="@font/montserrat"
-        android:gravity="center"
-        android:text="East"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.179"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.434" />
-
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="137dp"
-        android:layout_height="164dp"
-        android:layout_marginBottom="27dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.853"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.188"
-        app:srcCompat="@drawable/west" />
-
-    <TextView
-        android:id="@+id/west"
-        android:layout_width="139dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="27dp"
-        android:background="#D3D3D3"
-        android:fontFamily="@font/montserrat"
-        android:gravity="center"
-        android:text="West"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.858"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.436" />
-
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="137dp"
-        android:layout_height="166dp"
-        android:layout_marginEnd="90dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.179"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.697"
-        app:srcCompat="@drawable/north" />
-
-    <TextView
-        android:id="@+id/north"
-        android:layout_width="137dp"
-        android:layout_height="44dp"
-        android:layout_marginEnd="90dp"
-        android:layout_marginBottom="29dp"
-        android:background="#D3D3D3"
-        android:fontFamily="@font/montserrat"
-        android:gravity="center"
-        android:text="North"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.176"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.841" />
-
-    <ImageView
-        android:id="@+id/imageView12"
-        android:layout_width="139dp"
-        android:layout_height="169dp"
-        android:layout_marginStart="90dp"
-        android:layout_marginBottom="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.788"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.738"
-        app:srcCompat="@drawable/south" />
-
-    <TextView
-        android:id="@+id/south"
-        android:layout_width="139dp"
-        android:layout_height="46dp"
-        android:background="#D3D3D3"
-        android:fontFamily="@font/montserrat"
-        android:gravity="center"
-        android:text="South"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.841"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.796" />
-
-    <com.google.android.material.bottomappbar.BottomAppBar
-        android:id="@+id/bottomAppBar"
-        style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        app:backgroundTint="#8BC34A"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/searchTab"
         android:layout_width="60dp"
         android:layout_height="44dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/searchTabName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.902"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.985"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/infoTab"
         app:srcCompat="@android:drawable/ic_menu_search" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/searchTabName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/roboto"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/poppins_regular"
         android:text="Search"
-        app:layout_constraintBottom_toBottomOf="@+id/textView4"
-        app:layout_constraintEnd_toEndOf="@+id/bottomAppBar"
-        app:layout_constraintHorizontal_bias="0.884"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="59dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="89dp"
-        android:layout_marginBottom="9dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.382"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.988"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/infoTagName" />
+
+    <ImageView
+        android:id="@+id/infoTab"
+        android:layout_width="59dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/infoTagName"
+        app:layout_constraintEnd_toStartOf="@+id/searchTab"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/weatherTag"
         app:srcCompat="@drawable/info" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/infoTagName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="93dp"
-        android:fontFamily="@font/roboto"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/poppins_regular"
         android:text="Information"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.37"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintEnd_toStartOf="@+id/searchTabName"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/weatherTagName" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/weatherTagName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/roboto"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/poppins_regular"
         android:text="Weather"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/bottomAppBar"
-        app:layout_constraintHorizontal_bias="0.104"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintEnd_toStartOf="@+id/infoTagName"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/weatherTag"
         android:layout_width="70dp"
         android:layout_height="41dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.086"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/weatherTagName"
+        app:layout_constraintEnd_toStartOf="@+id/infoTab"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.979"
         app:srcCompat="@drawable/weather" />
+
+    <ImageView
+        android:id="@+id/westplant"
+        android:layout_width="166dp"
+        android:layout_height="236dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/plant3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/northplant" />
+
+    <ImageView
+        android:id="@+id/northplant"
+        android:layout_width="187dp"
+        android:layout_height="218dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/plant1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchParkName" />
+
+    <Button
+        android:id="@+id/northButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="296dp"
+        android:text="North"
+        app:layout_constraintEnd_toStartOf="@+id/eastButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/eastButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="296dp"
+        android:text="East"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/northButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/eastplant"
+        android:layout_width="164dp"
+        android:layout_height="213dp"
+        android:layout_marginStart="204dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/plant2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchParkName" />
+
+    <ImageView
+        android:id="@+id/southplant"
+        android:layout_width="182dp"
+        android:layout_height="237dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/plant4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eastplant" />
+
+    <Button
+        android:id="@+id/westButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="196dp"
+        android:text="West"
+        app:layout_constraintEnd_toStartOf="@+id/southButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/northButton" />
+
+    <Button
+        android:id="@+id/southButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="196dp"
+        android:text="South"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/westButton"
+        app:layout_constraintTop_toBottomOf="@+id/eastButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

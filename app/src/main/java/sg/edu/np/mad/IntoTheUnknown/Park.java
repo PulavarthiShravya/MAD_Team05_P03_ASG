@@ -9,15 +9,14 @@ public class Park{
     public String id;
     public String name;
     public String description;
-    public String location;
 
     public Park() {
     }
 
-    public Park(String name, String description, String location) {
+    public Park(String name, String description) {
         this.name = name;
         this.description = description;
-        this.location = location;
+
     }
 
     public String getId() {
@@ -40,12 +39,5 @@ public class Park{
         this.description = description;
     }
 
-    public String getLocation() {
-        return location;
-    }
-
-    public void setLocation(String location) {
-        this.location = location;
-    }
 
 }
