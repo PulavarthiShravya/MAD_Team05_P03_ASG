@@ -13,7 +13,7 @@ public class ParkViewHolder extends RecyclerView.ViewHolder{
     public ParkViewHolder(View itemView){
         super(itemView);
 
-        image = itemView.findViewById(R.id.imageView15);
+        image = itemView.findViewById(R.id.flower1);
         name = itemView.findViewById(R.id.parkName);
 
     }
