@@ -6,122 +6,23 @@
     android:layout_height="match_parent"
     tools:context=".informationPage">
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="70dp"
-        android:layout_height="41dp"
-        android:layout_marginBottom="7dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView10"
-        app:layout_constraintEnd_toStartOf="@+id/imageView11"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/weather" />
-
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:fontFamily="@font/roboto"
-        android:text="Search"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView9" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:fontFamily="@font/roboto"
-        android:text="Information"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView8"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView10" />
-
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:fontFamily="@font/roboto"
-        android:text="Weather"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView9"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:fontFamily="@font/montserrat"
+        android:text="Using Into the Unknown"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
 
     <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="59dp"
-        android:layout_height="39dp"
-        android:layout_marginBottom="9dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView9"
-        app:layout_constraintEnd_toStartOf="@+id/imageView13"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageView6"
-        app:srcCompat="@drawable/info" />
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/rectanglebox"
+        app:srcCompat="@drawable/weather"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="67dp" />
 
-    <ImageView
-        android:id="@+id/imageView13"
-        android:layout_width="60dp"
-        android:layout_height="44dp"
-        android:layout_marginBottom="4dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView8"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageView11"
-        app:srcCompat="@android:drawable/ic_menu_search" />
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="150dp"
-        android:layout_height="143dp"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="21dp"
-        android:layout_marginEnd="35dp"
-        app:layout_constraintEnd_toStartOf="@+id/weatherIcon"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/weather" />
-
-    <TextView
-        android:id="@+id/weatherIcon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="55dp"
-        android:layout_marginEnd="147dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView5"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/weatherSS"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="211dp"
-        android:layout_marginTop="216dp"
-        android:layout_marginEnd="142dp"
-        android:layout_marginBottom="211dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/imageView11"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/weatherIcon" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="282dp"
-        android:layout_marginTop="453dp"
-        android:layout_marginEnd="41dp"
-        android:text="Next"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
