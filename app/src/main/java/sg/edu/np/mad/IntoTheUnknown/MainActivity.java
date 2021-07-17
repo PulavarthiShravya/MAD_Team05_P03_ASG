@@ -38,5 +38,3 @@ public class MainActivity extends AppCompatActivity {
         cdt.start();
     }
 }
-//To Do:
-//create timer of time 2 seconds, after 2 seconds user to view searchPage class
