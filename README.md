@@ -7,8 +7,8 @@
   
 <h4>Table of contents</h4>
 <ul>
-  <li><a href = "intro">Introduction of Application</a></li>
-  <li><a href = "purpose">Purpose of application</a></li>
+  <li><a href = "#intro">Introduction of Application</a></li>
+  <li><a href = "#purpose">Purpose of application</a></li>
    <li>Competitors</li>
    <li>Comparsion of features</li>
    <li>Additional Features</li>
