@@ -67,6 +67,7 @@
   </tr>
   <tr>
     <th>Displaying of 300+ parks</th>
+    <th><p>&#10060;</p></th>
     <th><p>&#10004</p></th>
     
 
