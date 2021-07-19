@@ -1,28 +1,4 @@
 <p>MAD_Team05_P03_ASG</p>
-
-<!DOCTYPE html>
-<head>
-<style>
-* {
-  box-sizing: border-box;
-}
-
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-}
-
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-</style>
-</head>
-
-<body>
 <h1>Into the Unknown</h1>
 <h2>Discover SG's parks</h2>
   
@@ -54,14 +30,19 @@
 <h4>Who are our main users of the application?</h4>
 <p>There are many who love going to the park to involve themselves in various activities from babies till senior citizens. So who are our target audience? As mentioned earlier, our main purpose of the application is for people to explore the various parts of Singpore that they have never been to.</p>
 <p>Hence, our target audience are:</p>
-<img src = "natureLover.jpg" width = "200" height = "200">
-<ul>
-  <li>Nature lovers</li>
-  <li>Adventure Seekers</li>
-  <li>Families who want to have fun at parks</li>
-/ul>
-  </body>
-  </html>
+<div class="row">
+  <div class="column">
+    <img src = "natureLover.jpg" width = "200" height = "200">
+    <p>Nature lovers</p>
+  </div>
+  <div class="column">
+    <img src="img_forest.jpg" alt="Forest" width = "200" height = "200">
+    <p>world</p>
+  </div>
+  <div class="column">
+    <img src="img_mountains.jpg" alt="Mountains" width = "200" height = "200">
+  </div>
+</div>
   
 
 
