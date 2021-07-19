@@ -45,7 +45,13 @@
 <br>
 
 <h3 id = "race">Our Main Competitor</h3>
+<p>From our search in Google Play Store, our only competitor is NParks Coast to Coast. This application shows users the coastal trail for hikers to hike from their location to Coney Island only.</p>
+<h4>Drawbacks of our Competitiors</h4>
+<p>The application displays parks available. However it does not display all the 300+ parks available in Singapore. Moreover, this app (in our opinion) only caters to 1 group of people -> Adventure Seekers. Families and those who love to exercise at the park would not find this application useful and would not really cater to their needs.</p>
+<p>Furthermore, it has not been given a very positive review due to often "hanging" of application and "irregularities". Adding on, users have said that is does not have "minimum useability to start apps". This shows that many are very unhappy with the application.</p>
 
+<img src = "review1.jpg">
+<img src = "review2.jpg">
 
 
  
