@@ -10,7 +10,7 @@
   <li><a href = "#intro">Introduction of Application</a></li>
   <li><a href = "#target">Target Audience</a></li>
   <li><a href = "#race">Competitors</a></li>
-  <li>Comparsion of features</li>
+  <li><a href = "#features">Comparsion of features<a></li>
   <li>Additional Features</li>
   <li>Demonstration of Application</li>
   <li>Conclusion</li>
@@ -55,5 +55,19 @@
 
 <p>Looking at these reviews, we have decided to create the application to tackle them and give interested users a better experience to discover Singapore.</p>
 
+<br>
+
+<h3 id = "features">Comparing features with our Competitiors</h3>
+<p>We mentioned some of the drawbacks of our competitior based on the reviews given by the public. In this section, we will be looking at the features that our application will provide unlike our competitior.</p>
+<table>
+  <tr>
+    <th>Features</th>
+    <th>NParks</th>
+    <th>Into the Unknown</th>
+  </tr>
+  <tr>
+    <th>Displaying of 300+ parks</th>
+    <th><p>&#10004</p></th>
+    
 
  
