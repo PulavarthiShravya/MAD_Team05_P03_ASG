@@ -17,7 +17,7 @@ public class searchPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_page);
 
-        //getSupportActionBar().hide();
+        getSupportActionBar().hide();
         //variables
         TextView textView = findViewById(R.id.infoTagName);
         TextView textView1 = findViewById(R.id.weatherTagName);
