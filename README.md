@@ -10,10 +10,9 @@
   <li><a href = "#intro">Introduction of Application</a></li>
   <li><a href = "#target">Target Audience</a></li>
   <li><a href = "#race">Competitors</a></li>
-  <li><a href = "#features">Comparsion of features<a></li>
-  <li>Additional Features</li>
-  <li>Demonstration of Application</li>
-  <li>Conclusion</li>
+  <li><a href = "#features">Comparsion of features</a></li>
+  <li><a href = "#demo">Demonstration of Application</a></li>
+  <li><a href = "#conclude">Conclusion</a></li>
 </ul>
 
 <h3 id = "intro">Introduction of Application</h3>
@@ -69,6 +68,46 @@
     <th>Displaying of 300+ parks</th>
     <th><p>&#10060;</p></th>
     <th><p>&#10004</p></th>
+  </tr>
+  <tr>
+    <th>Search Parks of Interest</th>
+    <th><p>&#10060;</p></th>
+    <th><p>&#10004</p></th>
+  </tr>
+  <tr>
+    <th>Calculating Transport Fare</th>
+    <th><p>&#10060;</p></th>
+    <th><p>&#10004</p></th>
+  </tr>
+  <tr>
+    <th>Display Weather</th>
+    <th><p>&#10060;</p></th>
+    <th><p>&#10004</p></th>
+  </tr>
+  <tr>
+    <th>Show available activities</th>
+    <th><p>&#10060;</p></th>
+    <th><p>&#10004</p></th>
+  </tr>
+  <tr>
+    <th>Show hidden gems of parks</th>
+    <th><p>&#10060;</p></th>
+    <th><p>&#10004</p></th>
+  </tr>
+  <p>Based on this table, we have shown you what are the various features that our application will consist of. We believe that this would give users the things they are looking out for in such an application</p>
+</table>
+
+<br>
+
+<h3 id = "demo">Demonstration of our application</h3>
+<p>After looking the table, you might be wondering, the functionality of our application. Look at the video below to get an insight of Into the Unknown into action!</p>
+
+<br>
+
+<h3 id = "conclude">Conclusion</h3>
+<p>Based on the demo, we hope that you have a clearer insight of how our application functions! We hope that you will have a pleasent experience using this application!</p>
+  
+  
     
 
  
