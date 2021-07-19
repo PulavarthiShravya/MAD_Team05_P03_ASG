@@ -53,5 +53,7 @@
 <img src = "review1.jpg">
 <img src = "review2.jpg">
 
+<p>Looking at these reviews, we have decided to create the application to tackle them and give interested users a better experience to discover Singapore.</p>
+
 
  
