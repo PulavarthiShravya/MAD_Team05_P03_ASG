@@ -31,7 +31,7 @@
 <h4>Who are our main users of the application?</h4>
 <p>There are many who love going to the park to involve themselves in various activities from babies till senior citizens. So who are our target audience? As mentioned earlier, our main purpose of the application is for people to explore the various parts of Singpore that they have never been to.</p>
 <p>Hence, our target audience are:</p>
-<img src = "natureLover.jpg" width = "200" height = "200">
+<img src = "natureLover.jpg" width = "200" height = "200"><img src = "natureLover.jpg" width = "200" height = "200">
 <ul>
   <li>Nature lovers</li>
   <li>Adventure Seekers</li>
