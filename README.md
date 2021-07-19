@@ -17,6 +17,9 @@
 </ul>
 
 <h4 id = "intro">Introduction of Application</h4>
+<h5>About Into the Unknown</h5>
+<p>Into the Unknown is an application developed by a team of 3 students from Ngee Ann Polytechnic. The team consists of Pulavarthi Shravya, Tan Le Xuan Tricia and Teo Wei Jie</p>
+<p>This application allows users to discover the 300+ parks that are found in Singapore. 
 
 
  
