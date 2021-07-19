@@ -1,4 +1,21 @@
 <p>MAD_Team05_P03_ASG</p>
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 <h1>Into the Unknown</h1>
 <h2>Discover SG's parks</h2>
   
