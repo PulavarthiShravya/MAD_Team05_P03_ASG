@@ -22,7 +22,7 @@
 <h4>About Into the Unknown</h4>
 <p>This application aims to connect both foreigners and locals to view and explore the 300+ local parks in Singapore.Users can also discover the hidden gems of the parks and re-discover areas that they have never been to.The application will be available to the public in Google Play Store only.</p>
 <h4>Application Icon</h4>
-<img src = "![app icon](https://user-images.githubusercontent.com/73086610/126115553-6b443a18-e906-484b-a09e-f4efc7b22837.jpg)">
+<img src = "app icon.jpg">
 <p>Into the Unknown's app icon! The application icon is mainly made of much greenery to represent the nature, which is what the application is all about.</p>
 
 
