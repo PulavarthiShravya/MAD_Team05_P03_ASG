@@ -2,7 +2,11 @@ package sg.edu.np.mad.IntoTheUnknown;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 
 public class informationPage2 extends AppCompatActivity {
 
@@ -12,11 +16,43 @@ public class informationPage2 extends AppCompatActivity {
         setContentView(R.layout.activity_information_page2);
 
         getSupportActionBar().hide();
+
+        //variables
+        Button button = findViewById(R.id.button2);
+        TextView weather = findViewById(R.id.textView14);
+        TextView search = findViewById(R.id.textView18);
+
+        //redirect user to first information page
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //creating intent
+                Intent intent = new Intent(informationPage2.this, informationPage.class);
+                //start activity
+                startActivity(intent);
+            }
+        });
+
+        //redirect user to weather page
+        weather.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //creating intent
+                Intent intent = new Intent(informationPage2.this, weatherPage.class);
+                //start activity
+                startActivity(intent);
+            }
+        });
+
+        //redirect user to search page
+        search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //creating intent
+                Intent intent = new Intent(informationPage2.this, searchPage.class);
+                //start activity
+                startActivity(intent);
+            }
+        });
     }
 }
-
-//To Do:
-//main page to show about the search page
-//need to add screenshot of how search page looks like
-// 3 navigation "bar" mapping too (need to neaten in it up soon heheh)
-// previous button will lead user to how to informationPage1
