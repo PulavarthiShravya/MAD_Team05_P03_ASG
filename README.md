@@ -9,7 +9,7 @@
 <ul>
   <li><a href = "#intro">Introduction of Application</a></li>
   <li><a href = "#target">Target Audience</a></li>
-  <li>Competitors</li>
+  <li><a href = "#race">Competitors</a></li>
   <li>Comparsion of features</li>
   <li>Additional Features</li>
   <li>Demonstration of Application</li>
@@ -30,15 +30,22 @@
 <h3 id = "target">Target Audience</h3>
 <h4>Who are our main users of the application?</h4>
 <p>There are many who love going to the park to involve themselves in various activities from babies till senior citizens. So who are our target audience? As mentioned earlier, our main purpose of the application is for people to explore the various parts of Singpore that they have never been to.</p>
-<p>Hence, our target audience are:</p>
+<p>Hence, our target audience would mainly be:</p>
 <img src = "natureLover.jpg" width = "200" height = "200">
 <p>Nature lovers/Adventures</p>
+
+<br>
+
+<p>However, our application is not only limited to them. Others can also use our application as we do have features that cater to them by showing the available facilities/activities at the various parks. Hence, along with nature lovers/adventure seekers our application also caters to the following groups too!</p>
 <img src="family.jpg" alt="Forest" width = "200" height = "200">
 <p>Families</p>
 <img src="exercise.jpg" alt="Mountains" width = "200" height = "200">
 <p>People who exercise at parks</p>
 
-  
+<br>
+
+<h3 id = "race">Our Main Competitor</h3>
+
 
 
  
