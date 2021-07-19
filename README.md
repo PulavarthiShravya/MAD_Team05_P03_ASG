@@ -7,7 +7,7 @@
 
 <h4>Table of contents</h4>
 <ul>
-  <li color="black"><a href = "intro">Introduction of Application</a></li>
+  <li><a href = "intro" text-decoration:"none">Introduction of Application</a></li>
   <li>Purpose of application</li>
   <li>Competitors</li>
   <li>Comparsion of features</li>
