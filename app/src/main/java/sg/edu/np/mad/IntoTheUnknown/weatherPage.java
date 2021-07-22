@@ -3,8 +3,10 @@ package sg.edu.np.mad.IntoTheUnknown;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.android.volley.Request;
@@ -20,7 +22,7 @@ import org.json.JSONObject;
 
 public class weatherPage extends AppCompatActivity {
     //declare universal variable
-    TextView currentTemperature;
+    TextView currentTemperature, description, humidity, maxTemp, minTemp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,12 +56,17 @@ public class weatherPage extends AppCompatActivity {
 
         //variables for displaying temperature
         currentTemperature = findViewById(R.id.currentTemperature);
+        description = findViewById(R.id.desc);
+        humidity = findViewById(R.id.humid);
+        maxTemp = findViewById(R.id.max);
+        minTemp = findViewById(R.id.minTemp);
 
         //method to find the weather and display current temperature
         find_weather();
     }
 
     public void find_weather(){
+        String image = null;
         //api url + api key as well
         String url = "https://api.openweathermap.org/data/2.5/weather?lat=1.3521&lon=103.8198&appid=2208cad7b3134f7a764a2d2acde4b635&units=metric";
 
@@ -68,16 +75,35 @@ public class weatherPage extends AppCompatActivity {
             @Override
             public void onResponse(JSONObject response) {
                 try {
-                    //the "part" which we need take the temperature from
+                    //the "part" which we need take the temperature/information from
                     JSONObject main_object = response.getJSONObject("main");
-
                     JSONArray array = response.getJSONArray("weather");
+
                     //getting the first index
                     JSONObject object = array.getJSONObject(0);
+
                     //getting the value of current Temperature
                     String temp = String.valueOf(main_object.getDouble("temp"));
-                    //setting the current temp value inside XML
+
+                    //getting description
+                    String desc = object.getString("description");
+
+                    //getting humidity value
+                    String humid = String.valueOf(main_object.getInt("humidity"));
+
+                    //getting max temperature
+                    String max = String.valueOf(main_object.getDouble("temp_max"));
+
+                    //getting min temperature
+                    String min = String.valueOf(main_object.getDouble("temp_min"));
+
+                    //setting values inside XML
                     currentTemperature.setText(temp);
+                    description.setText(desc);
+                    humidity.setText(humid);
+                    maxTemp.setText(max);
+                    minTemp.setText(min);
+
                 }catch (JSONException e){
                     e.printStackTrace();
                 }
