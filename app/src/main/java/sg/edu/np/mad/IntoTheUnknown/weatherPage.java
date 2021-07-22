@@ -98,11 +98,11 @@ public class weatherPage extends AppCompatActivity {
                     String min = String.valueOf(main_object.getDouble("temp_min"));
 
                     //setting values inside XML
-                    currentTemperature.setText(temp);
+                    currentTemperature.setText(temp + "°C");
                     description.setText(desc);
                     humidity.setText(humid);
-                    maxTemp.setText(max);
-                    minTemp.setText(min);
+                    maxTemp.setText(max + "°C");
+                    minTemp.setText(min + "°C");
 
                 }catch (JSONException e){
                     e.printStackTrace();
