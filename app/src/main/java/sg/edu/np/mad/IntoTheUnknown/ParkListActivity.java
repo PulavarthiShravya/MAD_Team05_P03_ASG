@@ -2,11 +2,14 @@ package sg.edu.np.mad.IntoTheUnknown;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DefaultItemAnimator;
-import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -32,6 +35,8 @@ public class ParkListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_park_list);
 
+        EditText editText = findViewById(R.id.editText);
+
         String url = "https://tih-api.stb.gov.sg/national-park/v1/name/ ?apikey=AuCxF2XWFwNxlSdoWjOYHE71fJqRgi0j";
         RequestQueue requestQueue = Volley.newRequestQueue(ParkListActivity.this);
 
@@ -50,6 +55,7 @@ public class ParkListActivity extends AppCompatActivity {
                             //extracting variables
                         String nameOfPark = nameObject.getString("name");
                         parksList.add(new Park(i, nameOfPark));
+
                     }
 
 
