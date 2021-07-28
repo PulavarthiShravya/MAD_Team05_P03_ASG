@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="sg.edu.np.mad.IntoTheUnknown">
-    <!--Use internet permission-->
+    <!-- Use internet permission -->
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -11,7 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.IntoTheUnknown">
-        <activity android:name=".weatherPage"></activity>
+        <activity android:name=".EastParkListActivity"></activity>
+        <activity android:name=".SouthParkListActivity" />
+        <activity android:name=".WestParkListActivity" />
+        <activity android:name=".NorthParkListActivity" />
+        <activity android:name=".weatherPage" />
         <activity android:name=".ParkListActivity" />
         <activity android:name=".informationPage2" />
         <activity android:name=".informationPage" />

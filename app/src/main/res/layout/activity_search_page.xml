@@ -16,6 +16,7 @@
         android:inputType="textPersonName"
         android:hint="Enter Park Name"
         android:textAlignment="center"
+        android:imeOptions="actionSearch"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
@@ -103,20 +104,63 @@
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/weather" />
 
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="144dp"
+        android:layout_height="175dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eastButton"
+        app:srcCompat="@drawable/plant4" />
+
     <Button
-        android:id="@+id/northButton"
+        android:id="@+id/westButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="North"
-        app:layout_constraintEnd_toStartOf="@+id/eastButton"
+        android:layout_marginTop="8dp"
+        android:text="West"
+        app:layout_constraintEnd_toStartOf="@+id/southButton"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="144dp"
+        android:layout_height="175dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/plant2" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="144dp"
+        android:layout_height="175dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/northButton"
+        app:srcCompat="@drawable/plant3" />
+
+    <Button
+        android:id="@+id/southButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="South"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/westButton"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <Button
         android:id="@+id/eastButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
         android:text="East"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -124,61 +168,24 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <Button
-        android:id="@+id/westButton"
+        android:id="@+id/northButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="West"
-        app:layout_constraintEnd_toStartOf="@+id/southButton"
+        android:layout_marginTop="4dp"
+        android:text="North"
+        app:layout_constraintEnd_toStartOf="@+id/eastButton"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
-
-    <Button
-        android:id="@+id/southButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="South"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/westButton"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="144dp"
-        android:layout_height="175dp"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/plant2" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="144dp"
         android:layout_height="175dp"
-        android:layout_marginStart="46dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="80dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/plant1" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="144dp"
-        android:layout_height="175dp"
-        android:layout_marginStart="46dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/northButton"
-        app:srcCompat="@drawable/plant3" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="144dp"
-        android:layout_height="175dp"
-        android:layout_marginEnd="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/eastButton"
-        app:srcCompat="@drawable/plant4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
