@@ -29,7 +29,6 @@ public class weatherPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weather_page);
 
-        getSupportActionBar().hide();
         //variables (nav bar)
         TextView information = findViewById(R.id.textView28);
         TextView search = findViewById(R.id.textView29);
@@ -120,6 +119,3 @@ public class weatherPage extends AppCompatActivity {
         queue.add(request);
     }
 }
-
-//To-do:
-//weather API, display them as needed

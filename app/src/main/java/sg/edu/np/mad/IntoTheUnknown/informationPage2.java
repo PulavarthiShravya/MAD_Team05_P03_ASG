@@ -15,7 +15,6 @@ public class informationPage2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_information_page2);
 
-        getSupportActionBar().hide();
 
         //variables
         Button button = findViewById(R.id.button2);
