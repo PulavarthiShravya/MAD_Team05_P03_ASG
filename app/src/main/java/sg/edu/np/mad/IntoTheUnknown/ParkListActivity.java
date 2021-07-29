@@ -34,7 +34,6 @@ public class ParkListActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_park_list);
-
         TextView back = findViewById(R.id.textView24);
 
         RequestQueue requestQueue = Volley.newRequestQueue(ParkListActivity.this);
@@ -58,6 +57,13 @@ public class ParkListActivity extends AppCompatActivity {
                         parksList.add(new Park(i, nameOfPark));
                     }
 
+                    RecyclerView recyclerView = findViewById(R.id.recyclerview);
+                    ParkAdapter adapter = new ParkAdapter(parksList);
+                    LinearLayoutManager mLayoutManager =  new LinearLayoutManager(ParkListActivity.this);
+                    recyclerView.setLayoutManager(mLayoutManager);
+                    recyclerView.setItemAnimator(new DefaultItemAnimator());
+                    recyclerView.setAdapter(adapter);
+
                     }catch (JSONException e){
                         e.printStackTrace();
                     }
@@ -71,13 +77,6 @@ public class ParkListActivity extends AppCompatActivity {
         });
 
         requestQueue.add(jsonObjectRequest);
-
-        RecyclerView recyclerView = findViewById(R.id.recyclerview);
-        ParkAdapter adapter = new ParkAdapter(parksList);
-        LinearLayoutManager mLayoutManager =  new LinearLayoutManager(this);
-        recyclerView.setLayoutManager(mLayoutManager);
-        recyclerView.setItemAnimator(new DefaultItemAnimator());
-        recyclerView.setAdapter(adapter);
 
         //when user clicks on BacK (<)
         back.setOnClickListener(new View.OnClickListener(){

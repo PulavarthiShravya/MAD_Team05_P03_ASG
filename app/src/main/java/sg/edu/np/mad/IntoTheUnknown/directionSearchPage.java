@@ -40,7 +40,7 @@ public class directionSearchPage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(directionSearchPage.this, ParkListActivity.class);
-                intent.putExtra("south",2);
+                intent.putExtra("value",2);
                 startActivity(intent);
             }
         });
@@ -51,7 +51,7 @@ public class directionSearchPage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(directionSearchPage.this, ParkListActivity.class);
-                intent.putExtra("east",3);
+                intent.putExtra("value",3);
                 startActivity(intent);
             }
         });
@@ -62,7 +62,7 @@ public class directionSearchPage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(directionSearchPage.this, ParkListActivity.class);
-                intent.putExtra("west",4);
+                intent.putExtra("value",4);
                 startActivity(intent);
             }
         });
