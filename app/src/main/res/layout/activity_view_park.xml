@@ -34,11 +34,12 @@
         android:id="@+id/transportButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:text="Transport Fare"
+        android:layout_marginBottom="84dp"
         android:onClick="browser1"
+        android:text="Transport Fare"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
