@@ -13,7 +13,7 @@ public class Park{
     public Park(int id, String name) {
         this.id = id;
         this.name = name;
-        //this.description = description;
+        this.description = description;
     }
     public int getId() {
         return id;

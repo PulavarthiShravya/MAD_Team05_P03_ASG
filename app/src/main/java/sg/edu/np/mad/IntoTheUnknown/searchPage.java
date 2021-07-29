@@ -31,89 +31,31 @@ public class searchPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_page);
 
-
-        getSupportActionBar().hide();
         //variables
-        TextView textView = findViewById(R.id.infoTagName);
-        TextView textView1 = findViewById(R.id.weatherTagName);
-        ImageView searchButton = findViewById(R.id.searchPark);
-        TextView searchName = findViewById(R.id.searchParkName);
-        Button north = findViewById(R.id.northButton);
-        Button west = findViewById(R.id.westButton);
-        Button south = findViewById(R.id.southButton);
-        Button east = findViewById(R.id.eastButton);
+
+        Button direction = findViewById(R.id.directionButton);
+        Button name = findViewById(R.id.nameButton);
 
         //when user clicks on North
-        north.setOnClickListener(new View.OnClickListener(){
+        direction.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(searchPage.this, NorthParkListActivity.class);
+                Intent intent = new Intent(searchPage.this, directionSearchPage.class);
                 startActivity(intent);
             }
         });
 
         //when user clicks on West
-        west.setOnClickListener(new View.OnClickListener(){
+        name.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(searchPage.this, WestParkListActivity.class);
+                Intent intent = new Intent(searchPage.this, nameSearchPage.class);
                 startActivity(intent);
             }
         });
 
-        //when user clicks on South
-        south.setOnClickListener(new View.OnClickListener(){
-
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(searchPage.this, SouthParkListActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        //when user clicks on East
-        east.setOnClickListener(new View.OnClickListener(){
-
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(searchPage.this, EastParkListActivity.class);
-                startActivity(intent);
-            }
-        });
-
-
-
-        //when user clicks on informationTagName
-        searchButton.setOnClickListener(new View.OnClickListener(){
-
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(searchPage.this, ParkListActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        //when user clicks on informationTagName
-        textView.setOnClickListener(new View.OnClickListener(){
-
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(searchPage.this, informationPage.class);
-                startActivity(intent);
-            }
-        });
-
-        //when user clicks on weatherTagName
-        textView1.setOnClickListener(new View.OnClickListener(){
-
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(searchPage.this, weatherPage.class);
-                startActivity(intent);
-            }
-        });
     }
 
 }

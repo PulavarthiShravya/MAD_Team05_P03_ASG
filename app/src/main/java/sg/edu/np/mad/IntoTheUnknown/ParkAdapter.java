@@ -1,6 +1,9 @@
 package sg.edu.np.mad.IntoTheUnknown;
 
 import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,11 +26,35 @@ public class ParkAdapter extends RecyclerView.Adapter<ParkViewHolder>{
     }
     @Override
     public void onBindViewHolder(@NonNull ParkViewHolder holder, int position) {
+        Context context = holder.itemView.getContext();
         Park info = parks.get(position);
         holder.name.setText(info.name);
+        holder.image.setOnClickListener(v -> new AlertDialog.Builder(context)
+                .setTitle(info.name)
+                .setPositiveButton("Close", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.cancel();
+                    }
+                })
+                .setNegativeButton("View", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        Intent intent = new Intent(context, ViewPark.class);
+                        intent.putExtra("id", position);
+                        context.startActivity(intent);
+                    }
+                })
+
+                .show());
     }
     @Override
     public int getItemCount() {
         return parks.size();
     }
+
+    public void updateParksList(List<Park> updatedList){
+        parks.clear();
+        parks.addAll(updatedList);
+        ParkAdapter.this.notifyDataSetChanged();
+    }
+
 }
