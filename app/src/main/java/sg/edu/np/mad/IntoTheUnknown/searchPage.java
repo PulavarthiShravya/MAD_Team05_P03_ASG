@@ -35,8 +35,10 @@ public class searchPage extends AppCompatActivity {
 
         Button direction = findViewById(R.id.directionButton);
         Button name = findViewById(R.id.nameButton);
+        ImageView weather = findViewById(R.id.weatherTag);
+        ImageView info = findViewById(R.id.infoTab);
 
-        //when user clicks on North
+        //when user clicks on direction
         direction.setOnClickListener(new View.OnClickListener(){
 
             @Override
@@ -46,12 +48,32 @@ public class searchPage extends AppCompatActivity {
             }
         });
 
-        //when user clicks on West
+        //when user clicks on name
         name.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(searchPage.this, nameSearchPage.class);
+                startActivity(intent);
+            }
+        });
+
+        //when user clicks on weather
+        weather.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(searchPage.this, weatherPage.class);
+                startActivity(intent);
+            }
+        });
+
+        //when user clicks on info
+        info.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(searchPage.this, weatherPage.class);
                 startActivity(intent);
             }
         });
