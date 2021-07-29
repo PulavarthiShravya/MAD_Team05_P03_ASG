@@ -73,7 +73,7 @@ public class searchPage extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(searchPage.this, weatherPage.class);
+                Intent intent = new Intent(searchPage.this, informationPage.class);
                 startActivity(intent);
             }
         });
