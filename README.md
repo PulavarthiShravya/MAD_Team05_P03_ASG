@@ -103,7 +103,7 @@
     <tr>
     <th><img src = "splashscreen.jpg"></th>
     <th><img src = "searchMain.jpg"></th>
-    <th><img src = "weather.jpg"></th>
+    <th><img src = "weather1.jpg"></th>
     <th><img src = "information.jpg"></th>
     </tr>
      <tr>
