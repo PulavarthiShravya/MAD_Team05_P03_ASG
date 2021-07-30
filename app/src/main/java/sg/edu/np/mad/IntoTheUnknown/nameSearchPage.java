@@ -5,14 +5,17 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.SearchView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -30,7 +33,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class nameSearchPage extends AppCompatActivity {
-    private ArrayList<Park> parksList;
+
+    static ArrayList<Park> parksList;
     private RecyclerView parkNameRV;
 
     private ParkNameAdapter adapter;
@@ -42,10 +46,21 @@ public class nameSearchPage extends AppCompatActivity {
 
         // initializing our variables.
         parkNameRV = findViewById(R.id.recyclerView2);
+        TextView back = findViewById(R.id.textView24);
 
         // calling method to
         // build recycler view.
         buildRecyclerView();
+
+        //when user clicks on BacK (<)
+        back.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(nameSearchPage.this, searchPage.class);
+                startActivity(intent);
+            }
+        });
 
     }
 
@@ -162,4 +177,5 @@ public class nameSearchPage extends AppCompatActivity {
         requestQueue.add(jsonObjectRequest);
 
     }
+
 }
