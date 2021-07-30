@@ -1,19 +1,15 @@
 package sg.edu.np.mad.IntoTheUnknown;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.Editable;
-import android.text.TextWatcher;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.SearchView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -30,13 +26,11 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class nameSearchPage extends AppCompatActivity {
 
     static ArrayList<Park> parksList;
     private RecyclerView parkNameRV;
-
     private ParkNameAdapter adapter;
 
     @Override
@@ -46,7 +40,7 @@ public class nameSearchPage extends AppCompatActivity {
 
         // initializing our variables.
         parkNameRV = findViewById(R.id.recyclerView2);
-        TextView back = findViewById(R.id.textView24);
+        TextView back = findViewById(R.id.textView25);
 
         // calling method to
         // build recycler view.

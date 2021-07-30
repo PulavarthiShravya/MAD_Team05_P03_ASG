@@ -2,7 +2,6 @@ package sg.edu.np.mad.IntoTheUnknown;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DefaultItemAnimator;
-import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -83,7 +82,7 @@ public class ParkListActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ParkListActivity.this, searchPage.class);
+                Intent intent = new Intent(ParkListActivity.this, directionSearchPage.class);
                 startActivity(intent);
             }
         });

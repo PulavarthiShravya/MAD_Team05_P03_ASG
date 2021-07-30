@@ -21,7 +21,7 @@ public class ViewPark extends AppCompatActivity {
         setContentView(R.layout.activity_view_park);
 
         this.name = findViewById(R.id.textView21);
-        TextView back = findViewById(R.id.textView23);
+        TextView back = findViewById(R.id.textView26);
 
         int id = getIntent().getIntExtra("id", 0);
         Park info = ParkListActivity.parksList.get(id);
@@ -31,7 +31,7 @@ public class ViewPark extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ViewPark.this, ParkListActivity.class);
+                Intent intent = new Intent(ViewPark.this, directionSearchPage.class);
                 startActivity(intent);
             }
         });
