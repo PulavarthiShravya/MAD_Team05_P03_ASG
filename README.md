@@ -99,7 +99,17 @@
 <h3 id = "demo">Demonstration of our application</h3>
 <p>After looking the table, you might be wondering how our application looks. Take a look at the attached screenshots.</p>
 
-<img src = "images/splashscreen.jpg">
+<table>
+    <tr>
+    <th><img src = "splashscreen.jpg"></th>
+    <th><img src = "searchMain.jpg"></th>
+    <th><img src = "weather.jpg"></th>
+    <th><img src = "information.jpg"></th>
+  </tr>
+
+
+<img src = "information2.jpg">
+
 
 <br>
 
