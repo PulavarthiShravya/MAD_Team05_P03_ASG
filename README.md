@@ -105,10 +105,8 @@
     <th><img src = "searchMain.jpg"></th>
     <th><img src = "weather.jpg"></th>
     <th><img src = "information.jpg"></th>
-  </tr>
-
-
-<img src = "information2.jpg">
+    </tr>
+</table>
 
 
 <br>
