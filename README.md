@@ -20,7 +20,7 @@
 <h4>Creators of the application</h4>
 <p>Into the Unknown is an application developed by a team of 3 students from Ngee Ann Polytechnic. The team consists of Pulavarthi Shravya, Tan Le Xuan Tricia and Teo Wei Jie.</p>
 <h4>About Into the Unknown & Purpose</h4>
-<p>This application aims to connect both foreigners and locals to view and explore the 300+ local parks in Singapore.Users can also discover the hidden gems of the parks and re-discover areas that they have never been to.The application will be available to the public in Google Play Store only.</p>
+<p>This application aims to connect both foreigners and locals to view the 300+ local parks in Singapore.Users can look through by using our application that lists all the parks in Singapore.</p>
 <h4>Application Icon</h4>
 <img src = "app icon.jpg" width = "200" height = "200">
 <p>Into the Unknown's app icon! The application icon is mainly made of much greenery to represent the nature, which is what the application is all about.</p>
@@ -29,14 +29,14 @@
 
 <h3 id = "target">Target Audience</h3>
 <h4>Who are our main users of the application?</h4>
-<p>There are many who love going to the park to involve themselves in various activities from babies till senior citizens. So who are our target audience? As mentioned earlier, our main purpose of the application is for people to explore the various parts of Singpore that they have never been to.</p>
+<p>There are many who love going to the park to involve themselves in various activities from babies till senior citizens. So who are our target audience? As mentioned earlier, our main purpose of the application is for people to look at the various parks that are around Singapore.</p>
 <p>Hence, our target audience would mainly be:</p>
 <img src = "natureLover.jpg" width = "200" height = "200">
 <p>Nature lovers/Adventures</p>
 
 <br>
 
-<p>However, our application is not only limited to them. Others can also use our application as we do have features that cater to them by showing the available facilities/activities at the various parks. Hence, along with nature lovers/adventure seekers our application also caters to the following groups too!</p>
+<p>However, our application is not only limited to them. Others can also use our application as we do have features that cater to them by showing the common facilities/activities at the various parks. Hence, along with nature lovers/adventure seekers our application also caters to the following groups too!</p>
 <img src="family.jpg" alt="Forest" width = "200" height = "200">
 <p>Families</p>
 <img src="exercise.jpg" alt="Mountains" width = "200" height = "200">
@@ -90,11 +90,7 @@
     <th><p>&#10060;</p></th>
     <th><p>&#10004</p></th>
   </tr>
-  <tr>
-    <th>Show hidden gems of parks</th>
-    <th><p>&#10060;</p></th>
-    <th><p>&#10004</p></th>
-  </tr>
+  
   <p>Based on this table, we have shown you what are the various features that our application will consist of. We believe that this would give users the things they are looking out for in such an application</p>
 </table>
 
@@ -111,26 +107,28 @@
 <h3 id = "contribute">Our Individual Contributions</h3>
 <p>Shravya</p>
 <ul>
-  <li>Found API for all pages needed</li>
-  <li>Coded JSON part for API</li>
-  <li>Weather Page</li>
-  <li>Intent for all pages</li>
+  <li>Searched for needed API for relevant pages</li>
+  <li>Coded using JSON for API in relevant pages</li>
+  <li>API + Layout + Intent for weather page</li>
   <li>Display all parks using api</li>
-  <li>Displaying Transport Information</li>
+  <li>Filter for parks when searching by name</li>
+  <li>Intent to LTA website to calculate transport fares</li>
  </ul>
  
  <p>Tricia</p>
 <ul>
-  <li>Layout for pages</li>
-  <li>Recycler Views for necessary pages (view all parks)</li>
-  <li>Displaying Transport Information</li>
+  <li>Layout for all pages</li>
+  <li>Intent for all pages</li>
+  <li>Recycler View coding (displaying the parks based on Region and Search by name)</li>
+  <li>Transport Intent to LTA website to calculate transport fares</li>
+  <li>Filter for parks when searching by name</li>
  </ul>
  
   <p>Wei Jie</p>
 <ul>
-  <li>Layout for pages</li>
   <li>Countdown Timer from splash screen -> search page</li>
- </ul>
+  <li>Pitch PPT slides</li>
+</ul>
   
   
     
