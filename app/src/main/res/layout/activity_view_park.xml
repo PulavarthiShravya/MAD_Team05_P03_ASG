@@ -17,7 +17,7 @@
     <TextView
         android:id="@+id/textView21"
         android:layout_width="344dp"
-        android:layout_height="47dp"
+        android:layout_height="78dp"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/montserrat"
         android:gravity="center"
