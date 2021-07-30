@@ -47,25 +47,25 @@ public class ParkNameAdapter extends RecyclerView.Adapter<ParkNameAdapter.ParkVi
     @Override
     public void onBindViewHolder(@NonNull ParkNameAdapter.ParkViewHolder holder, int position) {
 
-        try{
-            holder.name.setText(parksList.get(position).getName().substring(0,2));
-            holder.image.setOnClickListener(v -> new AlertDialog.Builder(context)
-                    .setTitle(parksList.getName())
-                    .setPositiveButton("Close", new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int id) {
-                            dialog.cancel();
-                        }
-                    })
-                    .setNegativeButton("View", new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int id) {
-                            Intent intent = new Intent(context, ViewParkName.class);
-                            intent.putExtra("id", position);
-                            context.startActivity(intent);
-                        }
-                    })
+        Park park = parksList.get(position);
+        holder.name.setText(park.getName());
+        holder.image.setOnClickListener(v -> new AlertDialog.Builder(context)
+                .setTitle(park.name)
+                .setPositiveButton("Close", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.cancel();
+                    }
+                })
+                .setNegativeButton("View", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        Intent intent = new Intent(context, ViewParkName.class);
+                        intent.putExtra("id", position);
+                        context.startActivity(intent);
+                    }
+                })
 
-                    .show());
-        }
+                .show());
+
     }
 
     @Override
@@ -87,9 +87,6 @@ public class ParkNameAdapter extends RecyclerView.Adapter<ParkNameAdapter.ParkVi
 
         }
 
-        public interface OnNoteListener(
-                void onNoteClicker(int position);
-        )
     }
 
 }
