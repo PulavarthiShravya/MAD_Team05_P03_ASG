@@ -106,6 +106,17 @@
     <th><img src = "weather.jpg"></th>
     <th><img src = "information.jpg"></th>
     </tr>
+     <tr>
+    <th><img src = "information2.jpg"></th>
+    <th><img src = "directions.jpg"></th>
+    <th><img src = "parks.jpg"></th>
+    <th><img src = "namesee.jpg"></th>
+    </tr>
+    <tr>
+    <th><img src = "view.jpg"></th>
+    <th><img src = "nparks.jpg"></th>
+    <th><img src = "transport.jpg"></th>
+    </tr>
 </table>
 
 
