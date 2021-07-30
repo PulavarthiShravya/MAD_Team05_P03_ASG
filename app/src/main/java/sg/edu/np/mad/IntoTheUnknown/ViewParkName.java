@@ -44,4 +44,9 @@ public class ViewParkName extends AppCompatActivity {
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.lta.gov.sg/content/ltagov/en/map/fare-calculator.html"));
         startActivity(intent);
     }
+
+    public void browserNpark (View view){
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.nparks.gov.sg/activities"));
+        startActivity(intent);
+    }
 }

@@ -55,7 +55,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="102dp"
         android:fontFamily="@font/roboto"
-        android:text="the search page will show you  4 zones of parks that are  available in Singapore."
+        android:text="the search page will bring you to the 2 categories availble for browsing."
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -73,18 +73,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView16"
-        android:layout_width="133dp"
-        android:layout_height="292dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="17dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/textView5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
-        app:srcCompat="@drawable/searchpage" />
 
     <ImageView
         android:id="@+id/imageView15"
@@ -165,5 +153,19 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/weather" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="134dp"
+        android:layout_height="259dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="88dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView12"
+        app:layout_constraintEnd_toStartOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:srcCompat="@drawable/searchmain" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

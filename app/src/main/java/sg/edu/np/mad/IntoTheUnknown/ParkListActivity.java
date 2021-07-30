@@ -33,7 +33,7 @@ public class ParkListActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_park_list);
-        TextView back = findViewById(R.id.textView24);
+        TextView back = findViewById(R.id.textView25);
 
         RequestQueue requestQueue = Volley.newRequestQueue(ParkListActivity.this);
 

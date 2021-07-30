@@ -47,7 +47,7 @@ public class nameSearchPage extends AppCompatActivity {
         buildRecyclerView();
 
         //when user clicks on BacK (<)
-        back.setOnClickListener(new View.OnClickListener(){
+        back.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
@@ -171,5 +171,4 @@ public class nameSearchPage extends AppCompatActivity {
         requestQueue.add(jsonObjectRequest);
 
     }
-
 }
