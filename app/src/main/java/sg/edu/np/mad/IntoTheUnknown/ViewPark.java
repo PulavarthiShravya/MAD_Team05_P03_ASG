@@ -14,7 +14,6 @@ public class ViewPark extends AppCompatActivity {
 
     private Park park;
     private TextView name;
-    private TextView desc;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +21,6 @@ public class ViewPark extends AppCompatActivity {
         setContentView(R.layout.activity_view_park);
 
         this.name = findViewById(R.id.textView21);
-        this.desc = findViewById(R.id.textView13);
         TextView back = findViewById(R.id.textView23);
 
         int id = getIntent().getIntExtra("id", 0);
@@ -42,7 +40,6 @@ public class ViewPark extends AppCompatActivity {
     private void setPark(Park park){
         this.park = park;
         this.name.setText(park.getName());
-        this.desc.setText(park.getDescription());
     }
 
     public void browser1 (View view){

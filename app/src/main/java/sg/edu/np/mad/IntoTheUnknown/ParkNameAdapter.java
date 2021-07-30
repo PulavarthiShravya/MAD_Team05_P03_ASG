@@ -10,13 +10,15 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class ParkNameAdapter extends RecyclerView.Adapter<ParkNameAdapter.ParkViewHolder> {
-    private List<Park> mparksList;
+    private ArrayList<Park> parksList;
+    private Context context;
 
     public static class ParkViewHolder extends RecyclerView.ViewHolder {
 
@@ -32,25 +34,34 @@ public class ParkNameAdapter extends RecyclerView.Adapter<ParkNameAdapter.ParkVi
         }
     }
 
-    public ParkNameAdapter(ArrayList<Park> parksList) {
-        mparksList = parksList;
+    public ParkNameAdapter(ArrayList<Park> parksList, Context context) {
+
+        this.parksList = parksList;
+        this.context = context;
     }
 
+    public void filterList(ArrayList<Park> filterllist) {
+        // below line is to add our filtered
+        // list in our course array list.
+        parksList = filterllist;
+        // below line is to notify our adapter
+        // as change in recycler view data.
+        notifyDataSetChanged();
+    }
+    @NonNull
     @Override
-    public ParkViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_name_search_page,
+    public ParkNameAdapter.ParkViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.parkrecyclerview,
                 parent, false);
-        ParkViewHolder pvh = new ParkViewHolder(v);
-        return pvh;
+        return new ParkViewHolder(v);
     }
 
     @Override
-    public void onBindViewHolder(ParkViewHolder holder, int position) {
-        Context context = holder.itemView.getContext();
-        Park info = mparksList.get(position);
-        holder.name.setText(info.name);
+    public void onBindViewHolder(@NonNull ParkNameAdapter.ParkViewHolder holder, int position) {
+        Park park = parksList.get(position);
+        holder.name.setText(park.getName());
         holder.image.setOnClickListener(v -> new AlertDialog.Builder(context)
-                .setTitle(info.name)
+                .setTitle(park.name)
                 .setPositiveButton("Close", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         dialog.cancel();
@@ -69,12 +80,7 @@ public class ParkNameAdapter extends RecyclerView.Adapter<ParkNameAdapter.ParkVi
 
     @Override
     public int getItemCount() {
-        return mparksList.size();
+        return parksList.size();
     }
 
-    public void updateList(List<Park> newList){
-        mparksList = new ArrayList<>();
-        mparksList.addAll(newList);
-        notifyDataSetChanged();
-    }
 }

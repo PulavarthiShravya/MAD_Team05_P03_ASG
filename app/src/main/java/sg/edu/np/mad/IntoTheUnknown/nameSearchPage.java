@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.SearchView;
@@ -28,8 +29,9 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-public class nameSearchPage extends AppCompatActivity implements SearchView.OnQueryTextListener {
-    private ArrayList<Park> mparksList;
+public class nameSearchPage extends AppCompatActivity {
+    private ArrayList<Park> parksList;
+    private RecyclerView parkNameRV;
 
     private ParkNameAdapter adapter;
 
@@ -38,7 +40,79 @@ public class nameSearchPage extends AppCompatActivity implements SearchView.OnQu
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_name_search_page);
 
-        RequestQueue requestQueue = Volley.newRequestQueue(nameSearchPage.this);
+        // initializing our variables.
+        parkNameRV = findViewById(R.id.recyclerView2);
+
+        // calling method to
+        // build recycler view.
+        buildRecyclerView();
+
+    }
+
+    // calling on create option menu
+    // layout to inflate our menu file.
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // below line is to get our inflater
+        MenuInflater inflater = getMenuInflater();
+
+        // inside inflater we are inflating our menu file.
+        inflater.inflate(R.menu.search_menu, menu);
+
+        // below line is to get our menu item.
+        MenuItem searchItem = menu.findItem(R.id.actionSearch);
+
+        // getting search view of our item.
+        SearchView searchView = (SearchView) searchItem.getActionView();
+
+        // below line is to call set on query text listener method.
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                // inside on query text change method we are
+                // calling a method to filter our recycler view.
+                filter(newText);
+                return false;
+            }
+        });
+        return true;
+    }
+
+    private void filter(String text) {
+        // creating a new array list to filter our data.
+        ArrayList<Park> filteredlist = new ArrayList<>();
+
+        // running a for loop to compare elements.
+        for (Park item : parksList) {
+            // checking if the entered string matched with any item of our recycler view.
+            if (item.getName().toLowerCase().contains(text.toLowerCase())) {
+                // if the item is matched we are
+                // adding it to our filtered list.
+                filteredlist.add(item);
+            }
+        }
+        if (filteredlist.isEmpty()) {
+            // if no item is added in filtered list we are
+            // displaying a toast message as no data found.
+            Toast.makeText(this, "No Data Found!", Toast.LENGTH_SHORT).show();
+        } else {
+            // at last we are passing that filtered
+            // list to our adapter class.
+            adapter.filterList(filteredlist);
+        }
+    }
+
+    private void buildRecyclerView() {
+
+        // below line we are creating a new array list
+        parksList = new ArrayList<>();
+
+        // below line is to add data to our array list.
         String url = "https://tih-api.stb.gov.sg/national-park/v1/name/ ?apikey=AuCxF2XWFwNxlSdoWjOYHE71fJqRgi0j";
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
             @Override
@@ -54,14 +128,24 @@ public class nameSearchPage extends AppCompatActivity implements SearchView.OnQu
                         JSONObject nameObject = dataArray.getJSONObject(i);
                         //extracting variables
                         String nameOfPark = nameObject.getString("name");
-                        mparksList.add(new Park(i, nameOfPark));
+                        parksList.add(new Park(i, nameOfPark));
                     }
-                    RecyclerView recyclerView = findViewById(R.id.recyclerView2);
-                    ParkNameAdapter adapter = new ParkNameAdapter(mparksList);
-                    LinearLayoutManager mLayoutManager =  new LinearLayoutManager(nameSearchPage.this);
-                    recyclerView.setLayoutManager(mLayoutManager);
-                    recyclerView.setItemAnimator(new DefaultItemAnimator());
-                    recyclerView.setAdapter(adapter);
+
+
+                    // initializing our adapter class.
+                    adapter = new ParkNameAdapter(parksList, nameSearchPage.this);
+
+                    // adding layout manager to our recycler view.
+                    LinearLayoutManager manager = new LinearLayoutManager(nameSearchPage.this);
+                    parkNameRV.setHasFixedSize(true);
+
+                    // setting layout manager
+                    // to our recycler view.
+                    parkNameRV.setLayoutManager(manager);
+
+                    // setting adapter to
+                    // our recycler view.
+                    parkNameRV.setAdapter(adapter);
 
                 }catch (JSONException e){
                     e.printStackTrace();
@@ -74,34 +158,8 @@ public class nameSearchPage extends AppCompatActivity implements SearchView.OnQu
                 Toast.makeText(nameSearchPage.this, "No Parks to Display", Toast.LENGTH_SHORT).show();
             }
         });
+        RequestQueue requestQueue = Volley.newRequestQueue(nameSearchPage.this);
         requestQueue.add(jsonObjectRequest);
 
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.toolbar_menu, menu);
-        MenuItem menuItem = menu.findItem(R.id.action_search);
-        SearchView searchView = (SearchView) menuItem.getActionView();
-        searchView.setOnQueryTextListener(this);
-        return true;
-    }
-
-    @Override
-    public boolean onQueryTextSubmit(String query) {
-        return false;
-    }
-
-    @Override
-    public boolean onQueryTextChange(String newText) {
-        String userInput = newText.toLowerCase();
-        List<Park> newList = new ArrayList<>();
-        for (Park park : mparksList){
-            if(park.getName().toLowerCase().contains(userInput)){
-                newList.add(park);
-            }
-        }
-        adapter.updateList(newList);
-        return true;
     }
 }
