@@ -48,7 +48,7 @@ public class ViewPark extends AppCompatActivity {
     }
 
     public void browserNpark(View view){
-        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.nparks.gov.sg"));
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.nparks.gov.sg/activities"));
         startActivity(intent);
     }
 }

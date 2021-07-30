@@ -2,7 +2,6 @@ package sg.edu.np.mad.IntoTheUnknown;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DefaultItemAnimator;
-import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -34,7 +33,7 @@ public class ParkListActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_park_list);
-        TextView back = findViewById(R.id.textView24);
+        TextView back = findViewById(R.id.textView25);
 
         RequestQueue requestQueue = Volley.newRequestQueue(ParkListActivity.this);
 
