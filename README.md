@@ -112,7 +112,6 @@
   <li>API + Layout + Intent for weather page</li>
   <li>Display all parks using api</li>
   <li>Filter for parks when searching by name</li>
-  <li>JSON coding for view parks by region</li>
   <li>Intent to LTA website to calculate transport fares</li>
  </ul>
  
