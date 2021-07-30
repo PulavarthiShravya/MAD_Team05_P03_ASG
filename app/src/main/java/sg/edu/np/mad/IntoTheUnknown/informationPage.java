@@ -15,7 +15,6 @@ public class informationPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_information_page);
 
-        getSupportActionBar().hide();
 
         //variables
         Button button = findViewById(R.id.button);
@@ -56,5 +55,3 @@ public class informationPage extends AppCompatActivity {
         });
     }
 }
-//To Do:
-//need to add screenshot of how weather page looks like

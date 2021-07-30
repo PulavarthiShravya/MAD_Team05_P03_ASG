@@ -6,34 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".searchPage">
 
-    <EditText
-        android:id="@+id/searchParkName"
-        android:layout_width="282dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:fontFamily="@font/poppins_regular"
-        android:inputType="textPersonName"
-        android:text="Enter Park Name"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/searchPark"
-        android:layout_width="41dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.863"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.026"
-        app:srcCompat="@android:drawable/ic_menu_search" />
-
     <ImageView
         android:id="@+id/searchTab"
         android:layout_width="60dp"
@@ -103,82 +75,57 @@
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/weather" />
 
-    <Button
-        android:id="@+id/northButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="North"
-        app:layout_constraintEnd_toStartOf="@+id/eastButton"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-    <Button
-        android:id="@+id/eastButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="East"
+    <ImageView
+        android:id="@+id/flower3"
+        android:layout_width="187dp"
+        android:layout_height="270dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/northButton"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
-
-    <Button
-        android:id="@+id/westButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="West"
-        app:layout_constraintEnd_toStartOf="@+id/southButton"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        app:layout_constraintTop_toTopOf="@+id/directionButton"
+        app:srcCompat="@drawable/flower2" />
 
     <Button
-        android:id="@+id/southButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="South"
+        android:id="@+id/nameButton"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="212dp"
+        android:text="Search By Name"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/westButton"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/directionButton" />
+
+    <Button
+        android:id="@+id/directionButton"
+        android:layout_width="231dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="236dp"
+        android:text="Search By Direction"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="144dp"
-        android:layout_height="175dp"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="50dp"
+        android:id="@+id/flower2"
+        android:layout_width="178dp"
+        android:layout_height="258dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/plant2" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="144dp"
-        android:layout_height="175dp"
-        android:layout_marginStart="46dp"
-        android:layout_marginTop="64dp"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/plant1" />
+        app:srcCompat="@drawable/flower3" />
 
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="144dp"
-        android:layout_height="175dp"
-        android:layout_marginStart="46dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/northButton"
-        app:srcCompat="@drawable/plant3" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="144dp"
-        android:layout_height="175dp"
-        android:layout_marginEnd="50dp"
+        android:id="@+id/imageView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="580dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/eastButton"
-        app:srcCompat="@drawable/plant4" />
+        app:layout_constraintHorizontal_bias="0.889"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/btn_star" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

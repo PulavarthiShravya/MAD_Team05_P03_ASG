@@ -13,6 +13,7 @@
   <li><a href = "#features">Comparsion of features</a></li>
   <li><a href = "#demo">Demonstration of Application</a></li>
   <li><a href = "#conclude">Conclusion</a></li>
+  <li><a href = "#contribute">Our Individual Contributions</a></li>
 </ul>
 
 <h3 id = "intro">Introduction of Application</h3>
@@ -106,6 +107,30 @@
 
 <h3 id = "conclude">Conclusion</h3>
 <p>Based on the demo, we hope that you have a clearer insight of how our application functions! We hope that you will have a pleasent experience using this application!</p>
+
+<h3 id = "contribute">Our Individual Contributions</h3>
+<p>Shravya</p>
+<ul>
+  <li>Found API for all pages needed</li>
+  <li>Coded JSON part for API</li>
+  <li>Weather Page</li>
+  <li>Intent for all pages</li>
+  <li>Display all parks using api</li>
+  <li>Displaying Transport Information</li>
+ </ul>
+ 
+ <p>Tricia</p>
+<ul>
+  <li>Layout for pages</li>
+  <li>Recycler Views for necessary pages (view all parks)</li>
+  <li>Displaying Transport Information</li>
+ </ul>
+ 
+  <p>Wei Jie</p>
+<ul>
+  <li>Layout for pages</li>
+  <li>Countdown Timer from splash screen -> search page</li>
+ </ul>
   
   
     

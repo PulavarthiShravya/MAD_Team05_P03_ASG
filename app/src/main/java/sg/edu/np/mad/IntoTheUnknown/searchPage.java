@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -30,27 +31,45 @@ public class searchPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_page);
 
-
-        getSupportActionBar().hide();
         //variables
-        TextView textView = findViewById(R.id.infoTagName);
-        TextView textView1 = findViewById(R.id.weatherTagName);
-        ImageView searchButton = findViewById(R.id.searchPark);
-        TextView searchName = findViewById(R.id.searchParkName);
 
+        Button direction = findViewById(R.id.directionButton);
+        Button name = findViewById(R.id.nameButton);
+        ImageView weather = findViewById(R.id.weatherTag);
+        ImageView info = findViewById(R.id.infoTab);
 
-        //when user clicks on informationTagName
-        searchButton.setOnClickListener(new View.OnClickListener(){
+        //when user clicks on direction
+        direction.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(searchPage.this, ParkListActivity.class);
+                Intent intent = new Intent(searchPage.this, directionSearchPage.class);
                 startActivity(intent);
             }
         });
 
-        //when user clicks on informationTagName
-        textView.setOnClickListener(new View.OnClickListener(){
+        //when user clicks on name
+        name.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(searchPage.this, nameSearchPage.class);
+                startActivity(intent);
+            }
+        });
+
+        //when user clicks on weather
+        weather.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(searchPage.this, weatherPage.class);
+                startActivity(intent);
+            }
+        });
+
+        //when user clicks on info
+        info.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View v) {
@@ -59,15 +78,6 @@ public class searchPage extends AppCompatActivity {
             }
         });
 
-        //when user clicks on weatherTagName
-        textView1.setOnClickListener(new View.OnClickListener(){
-
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(searchPage.this, weatherPage.class);
-                startActivity(intent);
-            }
-        });
     }
 
 }
