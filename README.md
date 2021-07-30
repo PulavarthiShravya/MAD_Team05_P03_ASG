@@ -97,7 +97,9 @@
 <br>
 
 <h3 id = "demo">Demonstration of our application</h3>
-<p>After looking the table, you might be wondering, the functionality of our application. Look at the video below to get an insight of Into the Unknown into action!</p>
+<p>After looking the table, you might be wondering how our application looks. Take a look at the attached screenshots.</p>
+
+<img src = "images/splashscreen.jpg">
 
 <br>
 
