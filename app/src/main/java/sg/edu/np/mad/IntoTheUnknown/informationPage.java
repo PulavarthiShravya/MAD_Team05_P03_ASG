@@ -18,8 +18,8 @@ public class informationPage extends AppCompatActivity {
 
         //variables
         Button button = findViewById(R.id.button);
-        TextView weather = findViewById(R.id.textView6);
-        TextView search = findViewById(R.id.textView11);
+        TextView weather = findViewById(R.id.textView14);
+        TextView search = findViewById(R.id.textView18);
 
         //creating on click action to redirect user to next page
         button.setOnClickListener(new View.OnClickListener() {

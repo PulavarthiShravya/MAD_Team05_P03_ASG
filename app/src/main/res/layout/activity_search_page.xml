@@ -7,18 +7,18 @@
     tools:context=".searchPage">
 
     <ImageView
-        android:id="@+id/searchTab"
+        android:id="@+id/imageView14"
         android:layout_width="60dp"
         android:layout_height="44dp"
         android:layout_marginBottom="4dp"
-        app:layout_constraintBottom_toTopOf="@+id/searchTabName"
+        app:layout_constraintBottom_toTopOf="@+id/textView18"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/infoTab"
+        app:layout_constraintStart_toEndOf="@+id/imageView13"
         app:srcCompat="@android:drawable/ic_menu_search" />
 
     <TextView
-        android:id="@+id/searchTabName"
+        android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
@@ -27,50 +27,50 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/infoTagName" />
+        app:layout_constraintStart_toEndOf="@+id/textView15" />
 
     <ImageView
-        android:id="@+id/infoTab"
+        android:id="@+id/imageView13"
         android:layout_width="59dp"
         android:layout_height="39dp"
         android:layout_marginBottom="4dp"
-        app:layout_constraintBottom_toTopOf="@+id/infoTagName"
-        app:layout_constraintEnd_toStartOf="@+id/searchTab"
+        app:layout_constraintBottom_toTopOf="@+id/textView15"
+        app:layout_constraintEnd_toStartOf="@+id/imageView14"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/weatherTag"
+        app:layout_constraintStart_toEndOf="@+id/imageView12"
         app:srcCompat="@drawable/info" />
 
     <TextView
-        android:id="@+id/infoTagName"
+        android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:fontFamily="@font/poppins_regular"
         android:text="Information"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/searchTabName"
+        app:layout_constraintEnd_toStartOf="@+id/textView18"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/weatherTagName" />
+        app:layout_constraintStart_toEndOf="@+id/textView14" />
 
     <TextView
-        android:id="@+id/weatherTagName"
+        android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:fontFamily="@font/poppins_regular"
         android:text="Weather"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/infoTagName"
+        app:layout_constraintEnd_toStartOf="@+id/textView15"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/weatherTag"
+        android:id="@+id/imageView12"
         android:layout_width="70dp"
         android:layout_height="41dp"
         android:layout_marginBottom="4dp"
-        app:layout_constraintBottom_toTopOf="@+id/weatherTagName"
-        app:layout_constraintEnd_toStartOf="@+id/infoTab"
+        app:layout_constraintBottom_toTopOf="@+id/textView14"
+        app:layout_constraintEnd_toStartOf="@+id/imageView13"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/weather" />
@@ -121,11 +121,11 @@
         android:id="@+id/imageView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="580dp"
+        android:layout_marginBottom="72dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.889"
+        app:layout_constraintHorizontal_bias="0.883"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/btn_star" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

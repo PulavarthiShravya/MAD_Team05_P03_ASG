@@ -14,7 +14,6 @@ public class ViewPark extends AppCompatActivity {
 
     private Park park;
     private TextView name;
-    private TextView desc;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,8 +21,7 @@ public class ViewPark extends AppCompatActivity {
         setContentView(R.layout.activity_view_park);
 
         this.name = findViewById(R.id.textView21);
-        this.desc = findViewById(R.id.textView13);
-        TextView back = findViewById(R.id.textView23);
+        TextView back = findViewById(R.id.textView26);
 
         int id = getIntent().getIntExtra("id", 0);
         Park info = ParkListActivity.parksList.get(id);
@@ -33,7 +31,7 @@ public class ViewPark extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ViewPark.this, ParkListActivity.class);
+                Intent intent = new Intent(ViewPark.this, directionSearchPage.class);
                 startActivity(intent);
             }
         });
@@ -42,11 +40,15 @@ public class ViewPark extends AppCompatActivity {
     private void setPark(Park park){
         this.park = park;
         this.name.setText(park.getName());
-        this.desc.setText(park.getDescription());
     }
 
     public void browser1 (View view){
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.lta.gov.sg/content/ltagov/en/map/fare-calculator.html"));
+        startActivity(intent);
+    }
+
+    public void browserNpark(View view){
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.nparks.gov.sg/activities"));
         startActivity(intent);
     }
 }
