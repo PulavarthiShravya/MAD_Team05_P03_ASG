@@ -1,7 +1,9 @@
 package sg.edu.np.mad.IntoTheUnknown;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -62,7 +64,9 @@ public class searchPage extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
     }
-
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
 }

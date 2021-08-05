@@ -29,6 +29,7 @@ public class informationPage2 extends AppCompatActivity {
                 Intent intent = new Intent(informationPage2.this, informationPage.class);
                 //start activity
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -40,6 +41,7 @@ public class informationPage2 extends AppCompatActivity {
                 Intent intent = new Intent(informationPage2.this, weatherPage.class);
                 //start activity
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -51,7 +53,13 @@ public class informationPage2 extends AppCompatActivity {
                 Intent intent = new Intent(informationPage2.this, searchPage.class);
                 //start activity
                 startActivity(intent);
+                finish();
             }
         });
+    }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
     }
 }

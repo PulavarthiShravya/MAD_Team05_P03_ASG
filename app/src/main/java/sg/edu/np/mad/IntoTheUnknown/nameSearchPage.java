@@ -171,4 +171,9 @@ public class nameSearchPage extends AppCompatActivity {
         requestQueue.add(jsonObjectRequest);
 
     }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
+    }
 }

@@ -118,5 +118,9 @@ public class ParkListActivity extends AppCompatActivity {
         return url;
 
     }
-
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
+    }
 }

@@ -76,7 +76,11 @@ public class directionSearchPage extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
     }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
+    }
 }
